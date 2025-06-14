@@ -1,0 +1,121 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a,
+.curriculo {
+    text-decoration: none;
+    color: blueviolet;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: purple;
+}
+
+.icone {
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.media:nth-child(1) .icone {
+    color: #4dcb5d;
+}
+
+.media:nth-child(2) .icone {
+    color: #00669c;
+}
+
+.media:nth-child(1) .icone:hover {
+    color: #5efa73;
+}
+
+.media:nth-child(2) .icone:hover {
+    color: #0287ce;
+}
+
+.menu {
+    height: 40px;
+    width: 40px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.linha1,
+.linha2,
+.linha3 {
+    height: 3px;
+    width: 30px;
+    background-color: blueviolet;
+    transition: .5s;
+}
+
+.menu.active .linha1{
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.menu.active .linha2 {
+    display: none;
+}
+
+.menu.active .linha3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+.nav_mobile ul {
+    position: absolute;
+    right:0;
+    height: 200px;
+    width: 40vw;
+    transform: translate(100vw);
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav_mobile {
+    position: relative;
+    right: 0;
+}
+
+.nav_mobile ul {
+    list-style: none;
+}
+
+.nav_mobile a {
+    text-decoration: none;
+    color: blueviolet;
+    transition: .3s;
+}
+
+.nav_mobile a:hover {
+    color: purple;
+}
+
+.nav_mobile ul.active {
+    transform: translate(0);
+    opacity: 1;
+}

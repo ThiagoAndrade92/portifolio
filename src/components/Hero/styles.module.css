@@ -1,0 +1,40 @@
+.hero {
+width: 100%;
+padding-top: 60px;
+}
+
+.img_hero ,
+.textos_hero {
+    width: 50%;
+}
+
+.img_hero img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.textos_hero h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.textos_hero p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+.textos_hero h1 span,
+.textos_hero p span {
+    color: blueviolet;
+}
+
+@media (max-width: 988px) {
+    .img_hero {
+     width: 70%;
+    }
+
+    .textos_hero {
+        width: 100%;
+    }
+}

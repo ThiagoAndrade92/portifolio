@@ -1,0 +1,53 @@
+.habilidades {
+    padding-top: 60px;
+}
+
+.skill {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.awesome {
+    font-size: 4em;
+}
+
+.nome_skill {
+    font-size: 1.3em;
+}
+
+.skill:nth-child(1) .awesome,
+.skill:nth-child(1) .nome-skill {
+color: rgb(224, 80, 26);
+}
+
+.skill:nth-child(2) .awesome,
+.skill:nth-child(2) .nome-skill {
+color: rgb(1, 115, 188);
+}
+
+.skill:nth-child(3) .awesome,
+.skill:nth-child(3) .nome-skill {
+color: rgb(232, 201, 49);
+}
+
+.skill:nth-child(4) .awesome,
+.skill:nth-child(4) .nome-skill {
+color: #E8532B;
+}
+
+.skill:nth-child(5) .awesome,
+.skill:nth-child(5) .nome-skill {
+color: darkgray;
+}
+
+.skill:nth-child(6) .awesome,
+.skill:nth-child(6) .nome-skill {
+color: #7951B4;
+}
+
+.skill:nth-child(7) .awesome,
+.skill:nth-child(7) .nome-skill {
+color: rgb(13, 213, 241);
+}

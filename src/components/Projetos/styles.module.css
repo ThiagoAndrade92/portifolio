@@ -1,0 +1,64 @@
+.projetos {
+    padding-top: 60px;
+}
+
+.cards {
+    height: auto;
+    width: 500px;
+    border: 1px solid purple;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px purple, -3px -3px 10px purple;
+    transition: .3S;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.img_projetos {
+    width: auto;
+}
+
+.img_projetos img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px 20px 0 0;
+}
+
+.nome_projeto {
+    color: blueviolet;
+}
+
+.descricao {
+    text-align: justify;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: purple;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.link:hover {
+    background-color: rgb(99, 1, 99);
+}
+
+@media (max-width: 428px) {
+    .cards {
+        width: auto;
+        height: auto;
+    }
+
+    .cards:hover {
+        transform: scale(1);
+    }
+
+    .img_projetos {
+        width: auto;
+    }
+}

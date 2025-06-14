@@ -1,0 +1,11 @@
+.sobre {
+    padding-top: 60px;
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+.sobre p span {
+    color: blueviolet;
+}
