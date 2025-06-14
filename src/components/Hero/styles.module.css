@@ -1,6 +1,9 @@
 .hero {
 width: 100%;
 padding-top: 60px;
+
+background-color: black;
+color: white;
 }
 
 .img_hero ,
