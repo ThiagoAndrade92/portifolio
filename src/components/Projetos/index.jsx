@@ -58,7 +58,7 @@ export const Projetos = () => {
                 </div>{/* card pokedex */}
 
                 <div className={`${style.cards} d-flex flex-column`}>
-                    <div className={style.img_projetos}>
+                    <div className={`${style.img_projetos} `} >
                         <img src={Genshin} alt="Projeto" />
                     </div>
                     <div className={`${style.textos_projetos} d-flex flex-column align-items-center justify-content-center`}>
