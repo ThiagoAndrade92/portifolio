@@ -7,6 +7,12 @@
   list-style: none;
 }
 
+ body, html {
+    overflow-x: hidden;
+    background-color: black ;
+    color: #fff;
+  }
+
 .titulo {
   font-size: 3em;
   color: purple;
