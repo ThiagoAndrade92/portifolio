@@ -32,7 +32,7 @@ export const Header = () => {
             <li className="me-3"><a href="#sobre">Sobre</a></li>
             <li className="me-3"><a href="#habilidades">Habilidades</a></li>
             <li className="me-3"><a href="#projetos">Projetos</a></li>
-            <li><a href="./_portifolio-react_public_Thiago_curriculo (2).pdf" download>Currículo</a></li>
+            <li><a href="../../public/_portifolio-react_public_Thiago_curriculo (2).pdf" download>Currículo</a></li>
           </ul>
 
           <div className={`${style.contatos} d-flex align-items-center `}>
