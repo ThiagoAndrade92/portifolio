@@ -11,6 +11,7 @@ import Logo from '../../assets/imagens/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export const Header = () => {
@@ -41,8 +42,12 @@ export const Header = () => {
               <FontAwesomeIcon icon={faWhatsapp} className={style.icone}/>
             </a>
 
-            <a href="https://www.linkedin.com/in/thiago-silva-5581a41a2/" target="_blank" className={`${style.media}`}>
+            <a href="https://www.linkedin.com/in/thiago-silva-5581a41a2/" target="_blank" className={`${style.media} me-3`}>
               <FontAwesomeIcon icon={faLinkedin} className={style.icone} />
+            </a>
+
+            <a href="https://github.com/ThiagoAndrade92/" target="_blank" className={`${style.media}`}>
+              <FontAwesomeIcon icon={faGithub} className={style.icone} />
             </a>
 
           </div>{/* contatos */}
@@ -68,8 +73,12 @@ export const Header = () => {
               <FontAwesomeIcon icon={faWhatsapp} className={style.icone}/>
             </a>
 
-            <a href="https://www.linkedin.com/in/thiago-silva-5581a41a2/" target="_blank" className={`${style.media}`}>
+            <a href="https://www.linkedin.com/in/thiago-silva-5581a41a2/" target="_blank" className={`${style.media} me-3`}>
               <FontAwesomeIcon icon={faLinkedin} className={style.icone} />
+            </a>
+
+            <a href="https://github.com/ThiagoAndrade92" target="_blank" className={`${style.media}`}>
+              <FontAwesomeIcon icon={faGithub} className={style.icone} />
             </a>
 
           </div>{/* contatos */}

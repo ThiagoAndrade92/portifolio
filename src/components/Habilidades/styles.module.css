@@ -41,15 +41,10 @@ color: #E8532B;
 
 .skill:nth-child(5) .awesome,
 .skill:nth-child(5) .nome-skill {
-color: darkgray;
+color: #7951B4;
 }
 
 .skill:nth-child(6) .awesome,
 .skill:nth-child(6) .nome-skill {
-color: #7951B4;
-}
-
-.skill:nth-child(7) .awesome,
-.skill:nth-child(7) .nome-skill {
 color: rgb(13, 213, 241);
 }

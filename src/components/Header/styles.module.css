@@ -47,12 +47,20 @@
     color: #00669c;
 }
 
+.media:nth-child(3) .icone {
+color: darkgray;
+}
+
 .media:nth-child(1) .icone:hover {
     color: #5efa73;
 }
 
 .media:nth-child(2) .icone:hover {
     color: #0287ce;
+}
+
+.media:nth-child(3) .icone:hover {
+color: gray;
 }
 
 .menu {

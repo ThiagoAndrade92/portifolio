@@ -7,7 +7,6 @@ import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 
@@ -38,11 +37,6 @@ export const Habilidades = () => {
               <FontAwesomeIcon icon={faGit} className={styles.awesome} />
               <div className={styles.nome_skill}>Git</div>
             </div>{/* git */}
-
-            <div className={`${styles.skill} col-lg-3 col-md-6 col-12`}>
-              <FontAwesomeIcon icon={faGithub} className={styles.awesome} />
-              <div className={styles.nome_skill}>Github</div>
-            </div>{/* github */}
 
             <div className={`${styles.skill} col-lg-3 col-md-6 col-12`}>
               <FontAwesomeIcon icon={faBootstrap} className={styles.awesome} />
