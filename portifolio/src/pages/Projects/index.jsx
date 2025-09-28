@@ -1,4 +1,10 @@
+//Css
 import style from './Projects.module.css';
+
+//Images
+import Login from '../../assets/images/login.png';
+import Cep from '../../assets/images/cep.png';
+import Todo from '../../assets/images/todo.png';
 
 export const Projects = () => {
 
@@ -11,28 +17,41 @@ export const Projects = () => {
 
          <div className={`${style.cards_box}`}>
 
-            <div className={`${style.card} card mb-5`}>
+            <div className={`${style.card} mb-5`} style={{height: "570px"}}>
                <div className={`${style.card_img}`}>
-                  <div className={`${style.img}`}></div>
+                  <img src={Login} alt="todo list" />
                </div>
-                  <h1 className={`${style.title} text-center`}>Nome projeto</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae maxime nam? Voluptas, sint molestiae? Ducimus delectus ratione id ipsa non quo quia magnam totam rerum eveniet, dolorum maiores asperiores!</p>
+               <h1 className={`${style.title} text-center`}>Login</h1>
+               <p>Sistema frontend de autenticação com HTML, CSS e JavaScript, usando LocalStorage. Permite cadastro de usuários com validação de campos, login com email e senha, exibe saudação personalizada na Home e permite sair da conta. Inclui recurso de mostrar/ocultar senha e validações em tempo de envio.</p>
+               <div className={`${style.link}`}>
+                  <a href={'https://thiagoandrade92.github.io/login/'} target='_blank'>Ver mais</a>
+               </div>
             </div>
 
-            <div className={`${style.card} card mb-5`}>
+            <div className={`${style.card} mb-5`} style={{height: "460px"}}>
                <div className={`${style.card_img}`}>
-                  <div className={`${style.img}`}></div>
+                  <img src={Todo} alt="todo list" />
                </div>
-                  <h1 className={`${style.title} text-center`}>Nome projeto</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae maxime nam? Voluptas, sint molestiae? Ducimus delectus ratione id ipsa non quo quia magnam totam rerum eveniet, dolorum maiores asperiores!</p>
+               <h1 className={`${style.title} text-center`}>To Do List</h1>
+               <p>Gerencie suas tarefas de forma simples e dinâmica! Adicione, conclua e remova tarefas com persistência no navegador usando React, Context API e localStorage.
+
+                  Tecnologias: React, Context API, useReducer, CSS Modules</p>
+               <div className={`${style.link}`}>
+                  <a href="https://thiagoandrade92.github.io/toDo/" target='_blank'>Ver mais</a>
+               </div>
             </div>
 
-            <div className={`${style.card} card mb-5`}>
+            <div className={`${style.card} mb-5`} style={{height: "700px"}}>
                <div className={`${style.card_img}`}>
-                  <div className={`${style.img}`}></div>
+                  <img src={Cep} alt="todo list" />
                </div>
-                  <h1 className={`${style.title} text-center`}>Nome projeto</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae maxime nam? Voluptas, sint molestiae? Ducimus delectus ratione id ipsa non quo quia magnam totam rerum eveniet, dolorum maiores asperiores!</p>
+               <h1 className={`${style.title} text-center`}>Buscar CEP</h1>
+               <p>Um aplicativo web que permite pesquisar endereços completos a partir de informações como UF, cidade e rua. O projeto utiliza JavaScript moderno para fazer requisições à API do ViaCEP e exibir os resultados de forma dinâmica, com tratamento de erros e validação de campos. Ideal para demonstrar habilidades em DOM manipulation, async/await e consumo de APIs públicas.
+
+                  Tecnologias: HTML, CSS, JavaScript (Vanilla JS), API ViaCEP</p>
+               <div className={`${style.link}`}>
+                  <a href="https://thiagoandrade92.github.io/buscador-cep/" target='_blank'>Ver mais</a>
+               </div>
             </div>
 
          </div>{/* cards_box */}

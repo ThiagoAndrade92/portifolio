@@ -21,12 +21,16 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body, #root {
+html,body {
    height: 100%;
    font-size: 16px;
 }
 
 #root {
-   background-color: black;
    color: #fff;
+   background-color: black;
+}
+
+.span {
+   color: var(--medium-purple);
 }

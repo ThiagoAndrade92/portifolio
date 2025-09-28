@@ -14,34 +14,34 @@ export const Skills = () => {
          <div className={`${style.conteudo}`}>
             <h1 className='text-center mb-5'>Habilidades</h1>
 
-            <div className={`${style.icons} row g-3 text-center`}>
+            <div className={`${style.icons} row g-3 g-lg-5 text-center`}>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='HTML'>
                   <FontAwesomeIcon icon={faHtml5} className={`${style.fa}`}/>
                </div>
                
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='CSS'>
                   <FontAwesomeIcon icon={faCss3} className={`${style.fa}`}/>
                </div>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='JavaScript'>
                   <FontAwesomeIcon icon={faJs} className={`${style.fa}`}/>
                </div>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='React'>
                   <FontAwesomeIcon icon={faReact} className={`${style.fa}`}/>
                </div>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='Bootstrap'>
                   <FontAwesomeIcon icon={faBootstrap} className={`${style.fa} col-4 col-sm-4 col-lg-3`}/>
                </div>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='Git'>
                   <FontAwesomeIcon icon={faGit} className={`${style.fa}`}/>
                </div>
 
-               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`}>
+               <div className={` ${style.icon} col-4 col-sm-4 col-lg-3`} title='GitHub'>
                   <FontAwesomeIcon icon={faGithub} className={`${style.fa}`}/>
                </div>
 
