@@ -1,0 +1,39 @@
+.projects {
+   padding: 5%;
+   min-height: calc(100% - 8%);
+   background-color: black;
+}
+
+.projects > h1 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: var(--purple);
+}
+
+.card {
+   height: 400px;
+   width: 100%;
+}
+
+.card_img {
+   height: 50%;
+   width: 100%;
+}
+
+.img {
+   border-radius: 6px 6px 0 0;
+   background-color: red;
+   height: 100%;
+   width: 100%;
+}
+
+.title {
+   font-size: 2rem;
+   font-weight: 600;
+   color: var(--dark-orchid);
+}
+
+.card p {
+   padding: 5px;
+   text-align: justify;
+}

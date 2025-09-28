@@ -1,0 +1,14 @@
+.about {
+   padding: 5%;
+   height: calc(100% - 8%);
+}
+
+.about h1 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: var(--purple);
+}
+
+.about p {
+   text-align: justify;
+}

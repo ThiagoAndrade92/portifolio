@@ -1,3 +1,19 @@
+:root {
+   --lavender: #E6E6FA;
+   --thistle: #D8BFD8;
+   --plum: #DDA0DD;
+   --orchid: #DA70D6;
+   --violet: #EE82EE;
+   --medium-orchid: #BA55D3;
+   --medium-purple: #9370DB;
+   --amethyst: #9966CC;
+   --dark-orchid: #9932CC;
+   --dark-violet: #9400D3;
+   --dark-magenta: #8B008B;
+   --purple: #800080;
+   --indigo: #4B0082;
+}
+
 * {
    margin: 0;
    padding: 0;
