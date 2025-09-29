@@ -8,12 +8,7 @@
 }
 
 .img {
-   width: 70%;
-   height: 200px;
-
-   background: url('../../assets/images/perfil.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
+   width: 90%;
 }
 
 .text {

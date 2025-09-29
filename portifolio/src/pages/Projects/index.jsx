@@ -19,7 +19,7 @@ export const Projects = () => {
 
             <div className={`${style.card} mb-5`}>
                <div className={`${style.card_img}`}>
-                  <img src={Login} alt="todo list" />
+                  <img src={Login} alt="Login" />
                </div>
                <h1 className={`${style.title} text-center`}>Login</h1>
                <div className={`${style.p}`}>
@@ -46,7 +46,7 @@ export const Projects = () => {
 
             <div className={`${style.card} mb-5`}>
                <div className={`${style.card_img}`}>
-                  <img src={Cep} alt="todo list" />
+                  <img src={Cep} alt="Buscador de cep" />
                </div>
                <h1 className={`${style.title} text-center`}>Buscar CEP</h1>
                <div className={`${style.p}`}>

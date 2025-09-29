@@ -26,7 +26,7 @@ export const Contatos = () => {
                <span className={`${style.nome}`}>Likedin</span>
             </a>{/* likedin */}
 
-            <a href='/vite.svg' download className={`${style.contato} ${style.curriculo}`}>
+            <a href='/Curriculo_Thiago_Atualizado.pdf.pdf' download className={`${style.contato} ${style.curriculo}`}>
                <FontAwesomeIcon icon={faFileText} className={`${style.icon}`}/>
                <span className={`${style.nome}`}>Currículo</span>
             </a>{/* Currículo */}
