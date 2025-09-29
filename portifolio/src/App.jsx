@@ -20,7 +20,6 @@ function App() {
 
   return (
     <>
-    <Nav />
     <Routes>
       <Route path='/' element={<Hero/>} />
       <Route path='/about' element={<About/>} />
@@ -28,6 +27,7 @@ function App() {
       <Route path='/projects' element={<Projects/>} />
       <Route path='/contatos' element={<Contatos/>} />
     </Routes>
+    <Nav />
     </>
   )
 }

@@ -1,6 +1,7 @@
 .about {
    padding: 5%;
    height: calc(100% - 8%);
+   padding-bottom: 30px;
 }
 
 .about h1 {
