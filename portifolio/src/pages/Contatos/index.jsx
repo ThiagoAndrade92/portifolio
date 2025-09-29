@@ -21,7 +21,7 @@ export const Contatos = () => {
                <span className={`${style.nome}`}>Whatsapp</span>
             </a>{/* whatsapp */}
 
-            <a href='www.linkedin.com/in/thiago-silva-5581a41a2' target='_blank' className={`${style.contato} ${style.linkedin}`}>
+            <a href='https://www.linkedin.com/in/thiago-silva-5581a41a2/' target='_blank' className={`${style.contato} ${style.linkedin}`}>
                <FontAwesomeIcon icon={faLinkedin} className={`${style.icon}`}/>
                <span className={`${style.nome}`}>Likedin</span>
             </a>{/* likedin */}
