@@ -36,8 +36,15 @@ img {
    color: var(--dark-orchid);
 }
 
+.p {
+   height: 25%;
+   overflow-y: auto;
+   margin: 2%;
+   padding: 1%;
+   border: 2px solid rgb(192, 222, 248);
+}
+
 .card p {
-   padding: 2%;
    text-align: justify;
 }
 

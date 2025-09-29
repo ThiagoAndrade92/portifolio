@@ -1,0 +1,61 @@
+.contatos {
+   padding: 5%;
+}
+
+.contatos h1 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: var(--purple);
+}
+
+.box_contatos {
+   min-height: 80vh;
+}
+
+.contato {
+   width: 200px;
+   border: 2px solid var(--dark-orchid);
+   border-radius: 20px;
+   padding: 5px;
+   margin-bottom: 20px;
+   box-shadow: 2px 2px 4px var(--dark-orchid);
+   text-align: center;
+   text-decoration: none;
+}
+
+.whatsapp .icon,
+.linkedin .icon,
+.curriculo .icon {
+   margin-right: 5px;
+   font-size: 1.5rem;
+}
+
+.whatsapp .nome,
+.linkedin .nome,
+.curriculo .nome {
+   font-size: 1.5rem;
+}
+
+.whatsapp .icon {
+   color: #24cc63;
+}
+
+.whatsapp > .nome {
+   color: #24cc63;
+}
+
+.linkedin .icon {
+   color: #0a63bc;
+}
+
+.linkedin .nome {
+   color: #0a63bc;
+}
+
+.curriculo .icon {
+   color: darkgrey;
+}
+
+.curriculo .nome {
+   color: darkgrey;
+}

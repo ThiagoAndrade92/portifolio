@@ -1,6 +1,6 @@
 .skills {
    padding: 5%;
-   height: calc(100% - 8%);
+   min-height: 92vh;
 }
 
 .skills h1 {
