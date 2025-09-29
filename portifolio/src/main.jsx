@@ -4,12 +4,12 @@ import './index.css'
 import App from './App.jsx'
 
 //React router
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter basename='/portifolio/'>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
