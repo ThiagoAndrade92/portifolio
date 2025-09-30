@@ -59,3 +59,14 @@
 .curriculo .nome {
    color: darkgrey;
 }
+
+@media (min-width: 992px) {
+   .contatos {
+      max-width: 1000px;
+      margin: 0 auto;
+   }
+
+   .box_contatos {
+      min-height: 60vh;
+   }
+}

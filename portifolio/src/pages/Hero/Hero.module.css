@@ -24,3 +24,34 @@
    line-height: 1.8rem;
    text-align: justify;
 }
+
+/* Tablet */
+@media (min-width: 769px) {
+   .hero {
+      height: 80vh;
+   }
+
+   .img_hero {
+      margin-block: 10%;
+   }
+
+   .img {
+      width: 50%;
+   }
+}
+
+/* Desktop */
+@media (min-width: 992px) { 
+   .hero {
+      max-width: 1000px;
+      margin: 0 auto;
+   }
+
+   .img {
+      width: 35%;
+   }
+
+   .text {
+      padding-bottom: 0;
+   }
+}

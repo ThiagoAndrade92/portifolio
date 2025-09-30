@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressCard, faContactBook, faContactCard, faHouse, faInfo, faTasks } from '@fortawesome/free-solid-svg-icons';
 import { MeuLink } from '../MeuLink';
 
-export const Nav = () => {
+export const NavMobile = () => {
 
 
 
