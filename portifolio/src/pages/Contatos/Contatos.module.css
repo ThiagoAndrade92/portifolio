@@ -25,39 +25,41 @@
 
 .whatsapp .icon,
 .linkedin .icon,
-.curriculo .icon {
+.curriculo .icon,
+.github .icon {
    margin-right: 5px;
    font-size: 1.5rem;
 }
 
 .whatsapp .nome,
 .linkedin .nome,
-.curriculo .nome {
+.curriculo .nome,
+.github .nome {
    font-size: 1.5rem;
 }
 
-.whatsapp .icon {
+.whatsapp .icon,
+.whatsapp .nome {
    color: #24cc63;
+   transition: all .2s ease-in-out;
 }
 
-.whatsapp > .nome {
-   color: #24cc63;
-}
-
-.linkedin .icon {
-   color: #0a63bc;
-}
-
+.linkedin .icon,
 .linkedin .nome {
    color: #0a63bc;
+   transition: all .2s ease-in-out;
 }
 
-.curriculo .icon {
-   color: darkgrey;
+.github .icon,
+.github .nome {
+   color: #f0f8ff;
+   transition: all .2s ease-in-out;
 }
 
+.curriculo .icon,
 .curriculo .nome {
    color: darkgrey;
+   transition: all .2s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -68,5 +70,25 @@
 
    .box_contatos {
       min-height: 60vh;
+   }
+
+   .whatsapp:hover .icon,
+   .whatsapp:hover .nome {
+      color: #17803f;
+   }
+
+   .linkedin:hover .icon,
+   .linkedin:hover .nome {
+      color: #0a5096;
+   }
+
+   .github:hover .icon,
+   .github:hover .nome {
+      color: #9fa4a8;
+   }
+
+   .curriculo:hover .icon,
+   .curriculo:hover .nome {
+      color: #818181;
    }
 }

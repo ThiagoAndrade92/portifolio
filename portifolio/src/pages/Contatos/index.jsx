@@ -4,8 +4,8 @@ import style from './Contatos.module.css';
 //Font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faDochub, faDocker, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faArchive, faFile, faFileAlt, faFileArchive, faFileContract, faFileText, faFileWord } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFileText } from '@fortawesome/free-solid-svg-icons';
 
 export const Contatos = () => {
 
@@ -26,7 +26,12 @@ export const Contatos = () => {
                <span className={`${style.nome}`}>Likedin</span>
             </a>{/* likedin */}
 
-            <a href='../../../public/Curriculo_Thiago_Atualizado.pdf.pdf' download className={`${style.contato} ${style.curriculo}`}>
+            <a href='https://github.com/ThiagoAndrade92?tab=repositories' target='_blank' className={`${style.contato} ${style.github}`}>
+               <FontAwesomeIcon icon={faGithub} className={`${style.icon}`}/>
+               <span className={`${style.nome}`}>GitHub</span>
+            </a>{/* GitHub */}
+
+            <a href='/Curriculo_Thiago_Atualizado.pdf.pdf' download className={`${style.contato} ${style.curriculo}`}>
                <FontAwesomeIcon icon={faFileText} className={`${style.icon}`}/>
                <span className={`${style.nome}`}>Currículo</span>
             </a>{/* Currículo */}

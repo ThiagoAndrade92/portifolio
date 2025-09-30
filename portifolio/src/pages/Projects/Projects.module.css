@@ -63,11 +63,16 @@ img {
    border-radius: 20px;
    padding: 10px 15px;
    color: #fff;
+   transition: all .3s ease-in-out;
 }
 
 @media (min-width: 992px) {
    .projects {
       max-width: 1000px;
       margin: 0 auto;
+   }
+
+   .card a:hover {
+      background-color: #7a017a;
    }
 }
