@@ -56,10 +56,31 @@
    transition: all .2s ease-in-out;
 }
 
+.curriculo {
+   background-color: #000;
+}
+
 .curriculo .icon,
 .curriculo .nome {
    color: darkgrey;
    transition: all .2s ease-in-out;
+}
+
+.curriculo_dados {
+   background-color: #fff;
+   color: #000;
+   padding: 5%;
+   margin-bottom: 80px;
+}
+
+.curriculo_dados  .nome {
+   text-align: center;
+   color: #000;
+   margin-bottom: 50px;
+}
+
+.curriculo_dados section {
+   margin-bottom: 30px;
 }
 
 @media (min-width: 992px) {
