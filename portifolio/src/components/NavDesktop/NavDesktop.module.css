@@ -28,3 +28,9 @@
    .nav a:hover::after {
       width: 100%;
    }
+
+   @media (max-width: 992px) {
+      .nav a {
+         margin-right: 20px;
+      }
+   }
