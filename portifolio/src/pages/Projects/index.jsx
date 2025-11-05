@@ -40,8 +40,8 @@ export const Projects = () => {
                   </div>
                   <h1 className={`${style.title} text-center`}>To Do List</h1>
                   <div className={`${style.p}`}>
-                     <p>Gerencie suas tarefas de forma simples e dinâmica! Adicione, conclua e remova tarefas com persistência no navegador usando React, Context API e localStorage.
-                        Tecnologias: React, Context API, useReducer, CSS Modules</p>
+                     <p>Gerencie suas tarefas de forma simples e dinâmica! Adicione, conclua e remova tarefas.
+                        Tecnologias: HTML, CSS, TypeScript</p>
                   </div>
                   <div className={`${style.link}`}>
                      <a href="https://thiagoandrade92.github.io/toDo/" target='_blank'>Ver mais</a>
