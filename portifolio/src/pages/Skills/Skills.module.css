@@ -3,13 +3,21 @@
 }
 
 .skills {
-   padding: 5%;
+   padding: 0 5%;
    min-height: 90vh;
 }
 
 .skills h1 {
    font-size: 2.5rem;
    font-weight: 600;
+   color: var(--purple);
+}
+
+.list_skills ul {
+   list-style-type: square;
+}
+
+.list_skills > ul li::marker{
    color: var(--purple);
 }
 

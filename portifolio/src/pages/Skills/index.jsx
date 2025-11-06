@@ -11,6 +11,19 @@ export const Skills = () => {
       <div className={style.conteudo}>
         <h1 className='text-center mb-5'>Habilidades</h1>
 
+        <div className={`${style.list_skills}`}>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+
         {/* 🔁 container da faixa animada */}
         <div className={style.marquee}>
           <div className={style.track}>
