@@ -13,7 +13,7 @@ export const Projects = () => {
 
 
    return (
-      <section className={`${style.projects}`}>
+      <section className={`${style.projects}`} id='projects'>
          <h1 className='mb-5'>Projetos</h1>
 
          <div className={`${style.cards_box} row g-3`}>

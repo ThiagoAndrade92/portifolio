@@ -1,5 +1,4 @@
 //Css
-import { MeuLink } from '../MeuLink';
 import style from './NavDesktop.module.css';
 
 export const NavDesktop = () => {
@@ -8,25 +7,25 @@ export const NavDesktop = () => {
    return (
       <nav className={`${style.nav}`}>
 
-         <MeuLink to={'/'}>
+         <a href='#'>
             Home
-         </MeuLink>
+         </a>
 
-         <MeuLink to={'/about'}>
+         <a href='#about'>
             Sobre
-         </MeuLink>
+         </a>
 
-         <MeuLink to={'/skills'}>
+         <a href='#skills'>
             Habilidades
-         </MeuLink>
+         </a>
 
-         <MeuLink to={'/projects'}>
+         <a href='#projects'>
             Projetos
-         </MeuLink>
+         </a>
 
-         <MeuLink to={'/contatos'}>
+         <a href='#contacts'>
             Contatos
-         </MeuLink>
+         </a>
 
       </nav>
    )

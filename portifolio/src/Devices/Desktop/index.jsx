@@ -17,13 +17,11 @@ export const Desktop = ({children}) => {
    return (
       <main className="d-none d-md-block">
          <NavDesktop />
-         <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contatos" element={<Contatos />} />
-         </Routes>
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Contatos />
       </main>
    )
 };

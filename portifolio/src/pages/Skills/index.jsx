@@ -7,7 +7,7 @@ import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJs, faReact } from '@f
 
 export const Skills = () => {
   return (
-    <section className={`${style.skills} d-flex align-items-center justify-content-center`}>
+    <section id='skills' className={`${style.skills} d-flex align-items-center justify-content-center`}>
       <div className={style.conteudo}>
         <h1 className='text-center mb-5'>Habilidades</h1>
 
