@@ -7,7 +7,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Devices
-import { Mobile } from './Devices/Mobile';
+import { Mobile } from './Devices/Mobile/index.js';
 import { Desktop } from './Devices/Desktop';
 
 function App() {
