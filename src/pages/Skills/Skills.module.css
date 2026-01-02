@@ -10,7 +10,7 @@
 .skills h1 {
    font-size: 2.5rem;
    font-weight: 600;
-   color: var(--purple);
+   color: var(--h1-title-section);
 }
 
 .list_skills ul {
@@ -18,35 +18,35 @@
 }
 
 .list_skills > ul li::marker{
-   color: var(--purple);
+   color: var(--marker-li);
 }
 
 .icon:nth-child(1) {
-   color: #e85925;
+   color: var(--html);
 }
 
 .icon:nth-child(2) {
-   color: #254BDD;
+   color: var(--css);
 }
 
 .icon:nth-child(3) {
-   color: #efd81d;
+   color: var(--js);
 }
 
 .icon:nth-child(4) {
-   color: #5ed3f3;
+   color: var(--react);
 }
 
 .icon:nth-child(5) {
-   color: #8713f4;
+   color: var(--bootstrap);
 }
 
 .icon:nth-child(6) {
-   color: #E84D31;
+   color: var(--git);
 }
 
 .icon:nth-child(7) {
-   color: #fff;
+   color: var(--git-hub);
 }
 
 .fa {
@@ -58,7 +58,7 @@
 }
 
 .svg img {
-   background-color: black;
+   background-color: var(--back-ground);
 }
 
 @media (max-width: 1100px) {

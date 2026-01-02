@@ -1,19 +1,18 @@
 .projects {
    padding: 5%;
    min-height: calc(100% - 8%);
-   background-color: black;
+   background-color: var(--back-ground);
    padding-bottom: 90px;
 }
 
 .projects > h1 {
    font-size: 2.5rem;
    font-weight: 600;
-   color: var(--purple);
+   color: var(--h1-title-projects);
 }
 
 .card {
    height: 400px;
-   /* width: 100%; */
    background-color: aliceblue;
    color: black;
    border-radius: 6px;
@@ -34,7 +33,7 @@ img {
 .title {
    font-size: 2rem;
    font-weight: 600;
-   color: var(--dark-orchid);
+   color: var(--h1-title-projects);
 }
 
 .p {
@@ -59,10 +58,10 @@ img {
    box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
    text-decoration: none;
    text-align: center;
-   background-color: var(--dark-orchid);
+   background-color: var(--btn-projects);
    border-radius: 20px;
    padding: 10px 15px;
-   color: #fff;
+   color: var(--color-text);
    transition: all .3s ease-in-out;
 }
 
@@ -73,6 +72,6 @@ img {
    }
 
    .card a:hover {
-      background-color: #7a017a;
+      background-color: var(--btn-projects-hover);
    }
 }

@@ -1,12 +1,11 @@
 .nav_mobile {
-   background-color: #e2e1e1;
+   background-color: var(--background-nav-mobile);
    height: 10vh;
    border-radius: 40px 40px 0 0;
    border-bottom: 2px solid gray;
    position: fixed;
    bottom: 0;
-   right: 0;
-   left: 0;
+   width: 100%;
 }
 
 .nav_mobile a {
@@ -19,7 +18,7 @@
 
 .icons {
    text-decoration: none;
-   color: black;
+   color: var(--icons-mobile);
    font-size: 1.5rem;
 }
 

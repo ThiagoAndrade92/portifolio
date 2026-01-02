@@ -1,8 +1,3 @@
-//Css
-import './App.css';
-
-
-
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 

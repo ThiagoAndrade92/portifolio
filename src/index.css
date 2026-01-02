@@ -1,5 +1,36 @@
 :root {
-   --lavender: #E6E6FA;
+    /* global */
+   --back-ground: #000;
+   /* textos */
+   --h1-title-section: #800080;
+   --span: #9370DB;
+   --h1-title-projects: #9932CC;
+   --color-text: #fff;
+   /* elements */
+   --btn-projects: #9932CC;
+   --btn-projects-hover: #7a017a;
+   --border-contato: #9932CC;
+   --marker-li: #800080;
+   --hover-nav-desktop: #8B008B;
+   --color-link-desktop: #000000;
+   --background-nav-desktop: #f0f8ff;
+
+   --background-nav-mobile: #e2e1e1;
+   --icons-mobile: #000;
+
+   /* brands */
+   --html: #e85925;
+   --css: #254BDD;
+   --js: #efd81d;
+   --react: #5ed3f3;
+   --bootstrap: #8713f4;
+   --git: #E84D31;
+   --git-hub: #fff;
+   --whatsapp: #24cc63;
+   --linkedin: #0077b5;
+
+
+   /* --lavender: #E6E6FA;
    --thistle: #D8BFD8;
    --plum: #DDA0DD;
    --orchid: #DA70D6;
@@ -12,6 +43,57 @@
    --dark-magenta: #8B008B;
    --purple: #800080;
    --indigo: #4B0082;
+   --white: #fff;
+   --black: #000; */
+}
+
+:root[data-theme="dark"] {
+    /* global */
+   --back-ground: #000;
+   /* textos */
+   --h1-title-section: #800080;
+   --span: #9370DB;
+   --h1-title-projects: #9932CC;
+   --color-text: #fff;
+   /* elements */
+   --btn-projects: #9932CC;
+   --btn-projects-hover: #7a017a;
+   --border-contato: #9932CC;
+   --marker-li: #800080;
+   --hover-nav-desktop: #8B008B;
+   --color-link-desktop: #000000;
+   --background-nav-desktop: #f0f8ff;
+
+   --background-nav-mobile: #e2e1e1;
+   --icons-mobile: #000;
+
+   /* brands */
+   --html: #e85925;
+   --css: #254BDD;
+   --js: #efd81d;
+   --react: #5ed3f3;
+   --bootstrap: #8713f4;
+   --git: #E84D31;
+   --git-hub: #fff;
+   --whatsapp: #24cc63;
+   --linkedin: #0077b5;
+
+
+   /* --lavender: #E6E6FA;
+   --thistle: #D8BFD8;
+   --plum: #DDA0DD;
+   --orchid: #DA70D6;
+   --violet: #EE82EE;
+   --medium-orchid: #BA55D3;
+   --medium-purple: #9370DB;
+   --amethyst: #9966CC;
+   --dark-orchid: #9932CC;
+   --dark-violet: #9400D3;
+   --dark-magenta: #8B008B;
+   --purple: #800080;
+   --indigo: #4B0082;
+   --white: #fff;
+   --black: #000; */
 }
 
 * {
@@ -23,6 +105,7 @@
 
 html {
    font-size: 16px;
+   background-color: var(--back-ground);
 }
 
 html, body {
@@ -31,11 +114,10 @@ html, body {
 }
 
 #root {
+   color: var(--color-text);
    min-height: 100%;
-   color: #fff;
-   background-color: black;
 }
 
 .span {
-   color: var(--medium-purple);
+   color: var(--span);
 }
