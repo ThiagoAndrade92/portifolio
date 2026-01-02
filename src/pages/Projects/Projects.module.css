@@ -61,7 +61,7 @@ img {
    background-color: var(--btn-projects);
    border-radius: 20px;
    padding: 10px 15px;
-   color: var(--color-text);
+   color: var(--btn-projects-text);
    transition: all .3s ease-in-out;
 }
 

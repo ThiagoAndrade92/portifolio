@@ -17,6 +17,7 @@
 
    --background-nav-mobile: #e2e1e1;
    --icons-mobile: #000;
+   --name-icon-mobile: #000;
 
    /* brands */
    --html: #e85925;
@@ -58,6 +59,7 @@
    /* elements */
    --btn-projects: #9932CC;
    --btn-projects-hover: #7a017a;
+   --btn-projects-text: #000;
    --border-contato: #9932CC;
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
@@ -94,6 +96,29 @@
    --indigo: #4B0082;
    --white: #fff;
    --black: #000; */
+}
+
+:root[data-theme="light"] {
+   /* global */
+   --back-ground: #fff;
+   /* textos */
+   --h1-title-section: #800080;
+   --span: #9370DB;
+   --h1-title-projects: #9932CC;
+   --color-text: #000;
+   /* elements */
+   --btn-projects: #9932CC;
+   --btn-projects-text: #fff;
+   --border-contato: #9932CC;
+   --marker-li: #800080;
+   --hover-nav-desktop: #8B008B;
+   --color-link-desktop: #f0f8ff;
+   --background-nav-desktop: #000;
+
+   --background-nav-mobile: #000;
+   --icons-mobile: #e2e1e1;
+   --name-icon-mobile: #e2e1e1;
+
 }
 
 * {

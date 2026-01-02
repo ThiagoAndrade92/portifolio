@@ -23,5 +23,5 @@
 }
 
 .name {
-   color: black;
+   color: var(--name-icon-mobile);
 }
