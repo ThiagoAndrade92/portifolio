@@ -17,14 +17,14 @@ export const Mobile = () => {
 
    return (
       <main className='d-md-none'>
-      <Routes>
-      <Route path='/' element={<Hero/>} />
-      <Route path='/about' element={<About/>} />
-      <Route path='/skills' element={<Skills/>} />
-      <Route path='/projects' element={<Projects/>} />
-      <Route path='/contatos' element={<Contatos/>} />
-    </Routes>
-    <NavMobile />
+         <Routes>
+            <Route path='/' element={<Hero />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contatos' element={<Contatos />} />
+         </Routes>
+         <NavMobile />
       </main>
    )
 };

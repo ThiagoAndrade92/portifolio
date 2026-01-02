@@ -57,7 +57,7 @@
 }
 
 .curriculo {
-   background-color: #000;
+   background-color: var(--back-ground);
 }
 
 .curriculo .icon,

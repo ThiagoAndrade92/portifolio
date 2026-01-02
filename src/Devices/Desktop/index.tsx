@@ -10,7 +10,6 @@ import { About } from "../../pages/About";
 import { Skills } from "../../pages/Skills";
 import { Projects } from "../../pages/Projects";
 import { Contatos } from "../../pages/Contatos";
-import React from "react";
 
 export const Desktop = () => {
 
