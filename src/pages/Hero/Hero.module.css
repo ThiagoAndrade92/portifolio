@@ -32,7 +32,7 @@
    }
 
    .img_hero {
-      margin-block: 50%;
+      margin-top: 200px;
    }
 
    .img {
@@ -49,11 +49,7 @@
    }
 
    .img_hero {
-      margin-block: 20%;
-   }
-
-   .img {
-      width: 300px;
+      margin-top: 0;
    }
 
    .text {
