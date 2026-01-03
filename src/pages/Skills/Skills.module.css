@@ -61,6 +61,13 @@
    background-color: var(--back-ground);
 }
 
+/* Tablet */
+@media (min-width: 769px) {
+   .skills {
+      min-height: 60vh;
+   }
+}
+
 @media (max-width: 1100px) {
    .conteudo {
       max-width: 80vw;

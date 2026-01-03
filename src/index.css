@@ -42,7 +42,7 @@
    /* elements */
    --btn-projects: #9932CC;
    --btn-projects-text: #fff;
-   --border-contato: #9932CC;
+   --border-contato: mediumpurple;
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
    --color-link-desktop: #f0f8ff;
@@ -56,6 +56,8 @@
    --git-hub: #000;
 
 }
+
+
 
 * {
    margin: 0;
@@ -77,6 +79,10 @@ html, body {
    background-color: var(--back-ground);
    color: var(--color-text);
    min-height: 100%;
+}
+
+section {
+   scroll-margin-top: 5vh;
 }
 
 .span {

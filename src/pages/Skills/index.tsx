@@ -9,7 +9,7 @@ export const Skills = () => {
   return (
     <section id='skills' className={`${style.skills} d-flex align-items-center justify-content-center`}>
       <div className={style.conteudo}>
-        <h1 className='text-center mb-5'>Habilidades</h1>
+        <h1 className='text-center pb-5'>Habilidades</h1>
 
         <div className={`${style.list_skills}`}>
           <ul>
@@ -50,7 +50,8 @@ export const Skills = () => {
                 <div className={style.icon} title='GitHub'>
                   <FontAwesomeIcon icon={faGithub} className={style.fa} />
                 </div>
-                <div className={style.svg} title='TypeScript'>
+                <div className={`${style.svg} me-5`} 
+                title='TypeScript'>
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                     alt="TypeScript"

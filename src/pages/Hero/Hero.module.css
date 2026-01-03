@@ -45,6 +45,7 @@
    .hero {
       max-width: 1000px;
       margin: 0 auto;
+      height: inherit;
    }
 
    .img_hero {
