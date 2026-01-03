@@ -4,7 +4,7 @@ import './index.css'
 import App from './App'
 
 // React Router
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 const rootElement = document.getElementById('root')
 
@@ -14,8 +14,8 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <StrictMode>
-    <BrowserRouter basename="/portifolio/">
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 )
