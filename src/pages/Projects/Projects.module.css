@@ -36,7 +36,7 @@ img {
    color: var(--h1-title-projects);
 }
 
-.p {
+/* .p {
    height: 25%;
    overflow-y: auto;
    margin: 2%;
@@ -46,7 +46,7 @@ img {
 
 .card p {
    text-align: justify;
-}
+} */
 
 .link {
    width: 100%;

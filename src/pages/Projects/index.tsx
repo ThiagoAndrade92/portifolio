@@ -23,16 +23,19 @@ export const Projects = () => {
                   <div className={`${style.card_img}`}>
                      <img src={Login} alt="Login" />
                   </div>
-                  <h1 className={`${style.title} text-center`}>Login</h1>
-                  <div className={`${style.p}`}>
-                     <p>Sistema frontend de autenticação com HTML, CSS e JavaScript, usando LocalStorage. Permite cadastro de usuários com validação de campos, login com email e senha, exibe saudação personalizada na Home e permite sair da conta. Inclui recurso de mostrar/ocultar senha e validações em tempo de envio.</p>
-                  </div>
+                  <h1 className={`${style.title} text-center`}>Autenticação de usuários</h1>
+                  <ul className={`${style.p}`}>
+                     <li>HTML, CSS, JavaScript</li>
+                     <li>Login e cadastro de usuários</li>
+                     <li>Sessão persistente com LocalStorage</li>
+                     <li>Controle de autenticação</li>
+                  </ul>
                   <div className={`${style.link}`}>
                      <a href={'https://thiagoandrade92.github.io/login/'} target='_blank'>Ver mais</a>
                   </div>
                </div>
             </div>
-
+         {/* ===================================================== */}
             <div className='col-12 col-md-6'>
                <div className={`${style.card} `}>
                   <div className={`${style.card_img}`}>
@@ -48,6 +51,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
+         {/* ===================================================== */}
 
             <div className='col-12 col-md-6'>
                <div className={`${style.card} `}>
@@ -64,6 +68,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
+         {/* ===================================================== */}
 
             <div className='col-12 col-md-6'>
                <div className={`${style.card} `}>
@@ -80,6 +85,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
+         {/* ===================================================== */}
 
          </div>{/* cards_box */}
       </section>
