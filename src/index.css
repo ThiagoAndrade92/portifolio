@@ -8,12 +8,14 @@
    --color-text: #fff;
    /* elements */
    --btn-projects: #9932CC;
+   --btn-projects-text: #fff;
    --btn-projects-hover: #7a017a;
    --border-contato: #9932CC;
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
    --color-link-desktop: #000000;
    --background-nav-desktop: #f0f8ff;
+   --border-card-img: #800080;
 
    --background-nav-mobile: #e2e1e1;
    --icons-mobile: #000;
@@ -41,12 +43,12 @@
    --color-text: #000;
    /* elements */
    --btn-projects: #9932CC;
-   --btn-projects-text: #fff;
-   --border-contato: mediumpurple;
+   --border-contato: #9370d8;
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
    --color-link-desktop: #f0f8ff;
    --background-nav-desktop: #000;
+   --box-shadow-card: 4px 4px 8px rgba(0, 0, 0, .5);
 
    --background-nav-mobile: #000;
    --icons-mobile: #e2e1e1;
