@@ -1,7 +1,6 @@
 .projects {
    padding: 5%;
    min-height: calc(100% - 8%);
-   /* background-color: var(--back-ground); */
    padding-bottom: 90px;
 }
 
@@ -27,7 +26,6 @@
    overflow: hidden;
    border-radius: 6px 6px 0 0;
 }
-
 
 .card_img img {
    width: 100%;

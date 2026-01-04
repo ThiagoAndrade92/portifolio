@@ -2,15 +2,43 @@
 import style from './Projects.module.css';
 
 //Images
-import Login from '../../assets/images/login.png';
-import Cep from '../../assets/images/cep.png';
-import Todo from '../../assets/images/todo.png';
+import { LoginImg } from '../../assets/images/login/index';
+import { CepImg} from '../../assets/images/cep/index';
+import { TodoImg } from '../../assets/images/todo/index';
 import Loja from '../../assets/images/loja.png';
+
+//components
+import { Carousel } from '../../components/Carousel';
 
 export const Projects = () => {
 
+   // Carousel Cep
+   const cepScreens = [
+   CepImg.CepTelaInicial,
+   CepImg.CepCamposPreenchidos,
+   CepImg.CepResultadoBusca,
+];
 
+// Carousel Login
+const loginScreens = [
+      LoginImg.LoginTelaInicial,
+      LoginImg.LoginErroCamposVazios,
+      LoginImg.LoginCamposPreenchidos,
+      LoginImg.CadastreseTelaInicial,
+      LoginImg.CadastreseErroCamposVazios,
+      LoginImg.CadastreseErroPreencher,
+      LoginImg.CadastreseSenhaMostrar,
+      LoginImg.LoginRealizado,
+   ];
 
+      // Carousel Todo
+      const todoScreens = [
+      TodoImg.TarefasTelaInicial,
+      TodoImg.TarefasCriadas,
+      TodoImg.TarefasTodasTarefas,
+      TodoImg.TarefasFeitas,
+      TodoImg.TarefasNaoFeitas
+   ];
 
    return (
       <section className={`${style.projects}`} id='projects'>
@@ -20,9 +48,10 @@ export const Projects = () => {
 
             <div className='col-12 col-md-6'>
                <div className={`${style.card}`}>
-                  <div className={`${style.card_img}`}>
-                     <img src={Login} alt="Login" />
-                  </div>
+
+                  <Carousel images={loginScreens} alt="login e cadastro de usuários" />
+
+                  {/* -------------------------------------- */}
                   <h2 className={`${style.title} text-center`}>Autenticação de usuários</h2>
                   <ul className={`${style.info}`}>
                      <li>HTML, CSS, JavaScript</li>
@@ -40,9 +69,10 @@ export const Projects = () => {
             {/* ===================================================== */}
             <div className='col-12 col-md-6'>
                <div className={`${style.card} `}>
-                  <div className={`${style.card_img}`}>
-                     <img src={Todo} alt="todo list" />
-                  </div>
+                  
+                  <Carousel images={todoScreens} alt="gerenciador de tarefas" />
+
+                  {/* -------------------------------------- */}
                   <h2 className={`${style.title} text-center`}>Gerenciador de tarefas</h2>
                   <ul className={`${style.info}`}>
                      <li>React + TypeScript</li>
@@ -61,9 +91,10 @@ export const Projects = () => {
 
             <div className='col-12 col-md-6'>
                <div className={`${style.card} `}>
-                  <div className={`${style.card_img}`}>
-                     <img src={Cep} alt="Buscador de cep" />
-                  </div>
+                  
+                  <Carousel images={cepScreens} alt="buscador de cep" />
+
+                  {/* -------------------------------------- */}
                   <h2 className={`${style.title} text-center`}>Buscador de endereços</h2>
                   <ul className={style.info}>
                      <li>Vanilla JS com manipulação direta do DOM</li>
