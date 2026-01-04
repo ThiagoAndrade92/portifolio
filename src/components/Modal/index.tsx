@@ -4,9 +4,9 @@ import style from './Modal.module.css';
 
 type Props = {
    project: {
-   images: string[];
-   alt: string;
-   title: string;
+      images: string[];
+      alt: string;
+      title: string;
    };
    onClose: () => void;
 };
@@ -27,18 +27,35 @@ export const Modal = ({ project, onClose }: Props) => {
    };
 
    return (
-
-      <div className={`${style.modal} position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center`}
-         onClick={onClose}
-      >
-         <div className={`${style.carousel}`}>
-            <button onClick={prev}>{'<'}</button>
-            <div
-               className={`${style.card_img}`}>
-               <img src={project.images[current]} alt={project.alt} />
+      <>
+         {/* ============== MOBILE ================ */}
+         <div className={`${style.modalMobile} d-sm-none position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center`}
+            onClick={onClose}
+         >
+            <div className={`${style.carouselMobile}`}>
+               <div
+                  className={`${style.card_imgMobile}`}>
+                  <img src={project.images[current]} alt={project.alt} />
+               </div>
+               <div className={`${style.btnsMobile}`}>
+                  <button onClick={prev}>{'<'}</button>
+                  <button onClick={next}>{'>'}</button>
+               </div>
             </div>
-            <button onClick={next}>{'>'}</button>
          </div>
-      </div>
+         {/* ============== DESKTOP ================ */}
+         <div className={`${style.modal} d-none d-sm-block position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center`}
+            onClick={onClose}
+         >
+            <div className={`${style.carousel}`}>
+               <button onClick={prev}>{'<'}</button>
+               <div
+                  className={`${style.card_img}`}>
+                  <img src={project.images[current]} alt={project.alt} />
+               </div>
+               <button onClick={next}>{'>'}</button>
+            </div>
+         </div>
+      </>
    );
 };
