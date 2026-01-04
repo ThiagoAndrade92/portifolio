@@ -2,15 +2,32 @@
 import style from './Projects.module.css';
 
 //Images
-import { loginScreens } from '../../assets/images/login/index';
-import { cepScreens} from '../../assets/images/cep/index';
-import { todoScreens } from '../../assets/images/todo/index';
+import { LoginImg, loginScreens } from '../../assets/images/login/index';
+import { CepImg, cepScreens } from '../../assets/images/cep/index';
+import { TodoImg, todoScreens } from '../../assets/images/todo/index';
 import Loja from '../../assets/images/loja.png';
 
+//React
+import { useState } from 'react';
+
 //components
-import { Carousel } from '../../components/Carousel';
+import { Modal } from '../../components/Modal';
+import { projects } from '../../util/projects';
 
 export const Projects = () => {
+
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [activeProject, setActiveProject] = useState<number | null>(null);
+
+   const openModal = (id: number) => {
+      setActiveProject(id);
+      setIsModalOpen(true);
+   };
+
+   const closeModal = () => {
+  setIsModalOpen(false);
+  setActiveProject(null);
+};
 
    return (
       <section className={`${style.projects}`} id='projects'>
@@ -18,91 +35,43 @@ export const Projects = () => {
 
          <div className={`${style.cards_box} d-flex row g-3`}>
 
-            <div className='col-12 col-md-6'>
-               <div className={`${style.card}`}>
+            {
+               projects.map((project) => (
+                  <div className='col-12 col-md-6'
+                  key={project.id}>
+               <div
+               onClick={() => openModal(project.id)}
+               className={`${style.card} `}>
 
-                  <Carousel images={loginScreens} alt="login e cadastro de usuários" />
-
-                  {/* -------------------------------------- */}
-                  <h2 className={`${style.title} text-center`}>Autenticação de usuários</h2>
-                  <ul className={`${style.info}`}>
-                     <li>HTML, CSS, JavaScript</li>
-                     <li>Login e cadastro de usuários</li>
-                     <li>Sessão persistente com LocalStorage</li>
-                     <li>Controle de autenticação</li>
-                  </ul>
-                  <div className={`${style.link}`}>
-                     <a href={'https://thiagoandrade92.github.io/login/'} target='_blank'>Visualizar</a>
-
-                     <a href={'https://github.com/ThiagoAndrade92/login'} target='_blank'>Código</a>
-                  </div>
-               </div>
-            </div>
-            {/* ===================================================== */}
-            <div className='col-12 col-md-6'>
-               <div className={`${style.card} `}>
-                  
-                  <Carousel images={todoScreens} alt="gerenciador de tarefas" />
-
-                  {/* -------------------------------------- */}
-                  <h2 className={`${style.title} text-center`}>Gerenciador de tarefas</h2>
-                  <ul className={`${style.info}`}>
-                     <li>React + TypeScript</li>
-                     <li>Gerenciamento de estado com Context e reducer</li>
-                     <li>Inicialização lazy e persistência local</li>
-                     <li>Arquitetura previsível estilo Redux</li>
-                  </ul>
-                  <div className={`${style.link}`}>
-                     <a href="https://thiagoandrade92.github.io/toDo/" target='_blank'>Visualizar</a>
-
-                     <a href="https://github.com/ThiagoAndrade92/toDo" target='_blank'>Código</a>
-                  </div>
-               </div>
-            </div>
-            {/* ===================================================== */}
-
-            <div className='col-12 col-md-6'>
-               <div className={`${style.card} `}>
-                  
-                  <Carousel images={cepScreens} alt="buscador de cep" />
-
-                  {/* -------------------------------------- */}
-                  <h2 className={`${style.title} text-center`}>Buscador de endereços</h2>
-                  <ul className={style.info}>
-                     <li>Vanilla JS com manipulação direta do DOM</li>
-                     <li>Consumo de API REST (ViaCEP)</li>
-                     <li>async/await e tratamento de exceções</li>
-                     <li>Validação de entrada do usuário</li>
-                  </ul>
-                  <div className={`${style.link}`}>
-                     <a href="https://thiagoandrade92.github.io/buscador-cep/" target='_blank'>Visualizar</a>
-
-                     <a href="https://github.com/ThiagoAndrade92/buscador-cep" target='_blank'>Código</a>
-                  </div>
-               </div>
-            </div>
-            {/* ===================================================== */}
-
-            <div className='col-12 col-md-6'>
-               <div className={`${style.card} `}>
                   <div className={`${style.card_img}`}>
-                     <img src={Loja} alt="Buscador de cep" />
+                     <img src={project.preview} alt={project.alt} />
                   </div>
-                  <h2 className={`${style.title} text-center`}>Loja virtual</h2>
-                  <ul className={style.info}>
-                     <li>React</li>
-                     <li>Gerenciamento de estado global</li>
-                     <li>Carrinho com regras de negócio</li>
-                     <li>Persistência local e responsividade</li>
+
+
+                  {/* -------------------------------------- */}
+                  <h2 className={`${style.title} text-center`}>{project.title}</h2>
+                  <ul className={`${style.info}`}>
+                     <li>{project.li1}</li>
+                     <li>{project.li2}</li>
+                     <li>{project.li3}</li>
+                     <li>{project.li4}</li>
                   </ul>
                   <div className={`${style.link}`}>
-                     <a href="https://thiagoandrade92.github.io/store/" target='_blank'>Visualizar</a>
+                     <a href={project.btn1} target='_blank'>Visualizar</a>
 
-                     <a href="https://github.com/ThiagoAndrade92/store" target='_blank'>Código</a>
+                     <a href={project.btn2} target='_blank'>Código</a>
                   </div>
                </div>
             </div>
-            {/* ===================================================== */}
+               ))
+            }
+            
+            {isModalOpen && activeProject !==null && (
+               <Modal
+               project={projects.find(p => p.id === activeProject)!}
+               onClose={closeModal}
+               />
+            )}
 
          </div>{/* cards_box */}
       </section>

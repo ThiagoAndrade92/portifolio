@@ -4,7 +4,7 @@
    padding-bottom: 90px;
 }
 
-.projects > h1 {
+.projects>h1 {
    font-size: 2.5rem;
    font-weight: 600;
    color: var(--h1-title-projects);
@@ -26,6 +26,7 @@
    overflow: hidden;
    border-radius: 6px 6px 0 0;
 }
+
 
 .card_img img {
    width: 100%;
@@ -60,7 +61,7 @@
    transition: all .3s ease-in-out;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 769px) {
    .projects {
       max-width: 1000px;
       margin: 0 auto;
@@ -68,5 +69,14 @@
 
    .card a:hover {
       background-color: var(--btn-projects-hover);
+   }
+
+    .card {
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+   }
+
+   .card:hover {
+      transform: scale(1.03);
    }
 }
