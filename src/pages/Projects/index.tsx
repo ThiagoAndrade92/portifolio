@@ -2,43 +2,15 @@
 import style from './Projects.module.css';
 
 //Images
-import { LoginImg } from '../../assets/images/login/index';
-import { CepImg} from '../../assets/images/cep/index';
-import { TodoImg } from '../../assets/images/todo/index';
+import { loginScreens } from '../../assets/images/login/index';
+import { cepScreens} from '../../assets/images/cep/index';
+import { todoScreens } from '../../assets/images/todo/index';
 import Loja from '../../assets/images/loja.png';
 
 //components
 import { Carousel } from '../../components/Carousel';
 
 export const Projects = () => {
-
-   // Carousel Cep
-   const cepScreens = [
-   CepImg.CepTelaInicial,
-   CepImg.CepCamposPreenchidos,
-   CepImg.CepResultadoBusca,
-];
-
-// Carousel Login
-const loginScreens = [
-      LoginImg.LoginTelaInicial,
-      LoginImg.LoginErroCamposVazios,
-      LoginImg.LoginCamposPreenchidos,
-      LoginImg.CadastreseTelaInicial,
-      LoginImg.CadastreseErroCamposVazios,
-      LoginImg.CadastreseErroPreencher,
-      LoginImg.CadastreseSenhaMostrar,
-      LoginImg.LoginRealizado,
-   ];
-
-      // Carousel Todo
-      const todoScreens = [
-      TodoImg.TarefasTelaInicial,
-      TodoImg.TarefasCriadas,
-      TodoImg.TarefasTodasTarefas,
-      TodoImg.TarefasFeitas,
-      TodoImg.TarefasNaoFeitas
-   ];
 
    return (
       <section className={`${style.projects}`} id='projects'>

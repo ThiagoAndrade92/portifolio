@@ -9,3 +9,9 @@ export const CepImg = {
    CepCamposPreenchidos,
 };
 
+// Carousel Cep
+export const cepScreens = [
+   CepImg.CepTelaInicial,
+   CepImg.CepCamposPreenchidos,
+   CepImg.CepResultadoBusca,
+];

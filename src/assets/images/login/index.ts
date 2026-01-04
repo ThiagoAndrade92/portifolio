@@ -18,3 +18,14 @@ export const LoginImg = {
    LoginRealizado,
 };
 
+// Carousel Login
+export const loginScreens = [
+   LoginImg.LoginTelaInicial,
+   LoginImg.LoginErroCamposVazios,
+   LoginImg.LoginCamposPreenchidos,
+   LoginImg.CadastreseTelaInicial,
+   LoginImg.CadastreseErroCamposVazios,
+   LoginImg.CadastreseErroPreencher,
+   LoginImg.CadastreseSenhaMostrar,
+   LoginImg.LoginRealizado,
+];

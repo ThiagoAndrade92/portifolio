@@ -13,3 +13,12 @@ export const TodoImg = {
    TarefasNaoFeitas,
 
 };
+
+// Carousel Todo
+export const todoScreens = [
+   TodoImg.TarefasTelaInicial,
+   TodoImg.TarefasCriadas,
+   TodoImg.TarefasTodasTarefas,
+   TodoImg.TarefasFeitas,
+   TodoImg.TarefasNaoFeitas
+];
