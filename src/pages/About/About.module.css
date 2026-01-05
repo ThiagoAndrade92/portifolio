@@ -1,6 +1,6 @@
 .about {
    padding: 5%;
-   height: calc(100% - 8%);
+   height: calc(100vh - 8vh);
 }
 
 .about h1 {
@@ -14,4 +14,13 @@
    font-size: 1rem;
    line-height: 1.8rem;
    text-align: justify;
+}
+
+/* ======== Mobile ======== */
+
+@media (max-width: 768px) {
+   .about {
+      height: auto;
+      padding-bottom: 30px;
+   }
 }
