@@ -1,9 +1,9 @@
-.hero {
+.home {
    height: calc(100% - 8%);
    padding: 5%;
 }
 
-.img_hero {
+.img_home {
    width: 100%;
 }
 
@@ -28,7 +28,11 @@
 /* Tablet */
 @media (min-width: 769px) {
 
-   .img_hero {
+   .home {
+      height: 100vh;
+   }
+
+   .img_home {
       margin-top: 20px;
    }
 
@@ -40,7 +44,11 @@
 /* Desktop */
 @media (min-width: 992px) {
 
-   .img_hero {
+   .home {
+      height: calc(100% - 8%);
+   }
+
+   .img_home {
       margin-top: 0;
    }
-} 
+}

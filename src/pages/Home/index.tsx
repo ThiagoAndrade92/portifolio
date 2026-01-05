@@ -1,14 +1,14 @@
 //Css
-import style from './Hero.module.css';
+import style from './Home.module.css';
 
 import Perfil from '../../assets/images/perfil.jpg';
 
-export const Hero = () => {
+export const Home = () => {
 
 
    return (
-      <section className={`${style.hero} d-flex flex-column align-items-center justify-content-center`}>
-         <div className={` ${style.img_hero} d-flex align-items-center justify-content-center mb-3`}>
+      <section className={`${style.home} d-flex flex-column align-items-center justify-content-center`}>
+         <div className={` ${style.img_home} d-flex align-items-center justify-content-center mb-3`}>
             <img src={Perfil} alt='Thiago' title='Thiago da Silva Andrade' className={`${style.img}`}></img>
          </div>
          <div className={`${style.text}`}>

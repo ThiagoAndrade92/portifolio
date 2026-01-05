@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import { NavMobile } from '../../components/NavMobile';
 
 //Pages
-import { Hero } from '../../pages/Hero';
+import { Home } from '../../pages/Home';
 import { About } from '../../pages/About';
 import { Skills } from '../../pages/Skills';
 import { Projects } from '../../pages/Projects';
@@ -18,7 +18,7 @@ export const Mobile = () => {
    return (
       <main className='d-md-none'>
          <Routes>
-            <Route path='/' element={<Hero />} />
+            <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />

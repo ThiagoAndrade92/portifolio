@@ -5,7 +5,7 @@ import { NavDesktop } from "../../components/NavDesktop";
 import { Route, Routes } from "react-router-dom";
 
 //Pages
-import { Hero } from "../../pages/Hero";
+import { Home } from "../../pages/Home";
 import { About } from "../../pages/About";
 import { Skills } from "../../pages/Skills";
 import { Projects } from "../../pages/Projects";
@@ -18,7 +18,7 @@ export const Desktop = () => {
       <main className="d-none d-md-block">
          <NavDesktop />
          <Routes>
-            <Route path='/' element={<Hero />} />
+            <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
