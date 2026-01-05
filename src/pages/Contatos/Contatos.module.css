@@ -15,13 +15,12 @@
 
 .contato {
    width: 200px;
-   border: 2px solid var(--border-contato);
    border-radius: 20px;
    padding: 5px;
    margin-bottom: 20px;
-   box-shadow: 2px 2px 4px var(--border-contato);
    text-align: center;
    text-decoration: none;
+   transition: all .2s ease-in-out;
 }
 
 .whatsapp .icon,
@@ -39,22 +38,61 @@
    font-size: 1.5rem;
 }
 
+.contato.whatsapp {
+   background-color: var(--whatsapp);
+}
+
+.contato.whatsapp:hover {
+   transform: scale(1.1);
+   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+}
+
 .whatsapp .icon,
 .whatsapp .nome {
-   color: var(--whatsapp);
+   color: var(--back-ground);
    transition: all .2s ease-in-out;
+}
+
+.contato.linkedin {
+   background-color: var(--linkedin);
+}
+
+.contato.linkedin:hover {
+   transform: scale(1.1);
+   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+
 }
 
 .linkedin .icon,
 .linkedin .nome {
-   color: var(--linkedin);
+   color: var(--back-ground);
    transition: all .2s ease-in-out;
+}
+
+.contato.github {
+   background-color: var(--git-hub);
+}
+
+.contato.github:hover {
+   transform: scale(1.1);
+   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+
 }
 
 .github .icon,
 .github .nome {
-   color: var(--git-hub);
+   color: var(--back-ground);
    transition: all .2s ease-in-out;
+}
+
+.contato.curriculo {
+   border: 2px solid darkgrey;
+}
+
+.contato.curriculo:hover {
+   transform: scale(1.1);
+   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+
 }
 
 .curriculo {
@@ -74,7 +112,7 @@
    margin-bottom: 80px;
 }
 
-.curriculo_dados  .nome {
+.curriculo_dados .nome {
    text-align: center;
    color: #000;
    margin-bottom: 50px;

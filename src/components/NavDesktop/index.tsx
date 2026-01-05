@@ -49,28 +49,28 @@ export const NavDesktop = () => {
          <MeuLink
          title='ir para a seção sobre'
          aria-label='ir para a seção sobre'
-         to='about'>
+         to='/about'>
             Sobre
          </MeuLink>
 
          <MeuLink
          title='ir para a seção habilidades'
          aria-label='ir para a seção habilidades'
-         to='skills'>
+         to='/skills'>
             Habilidades
          </MeuLink>
 
          <MeuLink
          title='ir para a seção projetos'
          aria-label='ir para a seção projetos'
-         to='projects'>
+         to='/projects'>
             Projetos
          </MeuLink>
 
          <MeuLink
          title='ir para a seção contatos'
          aria-label='ir para a seção contatos'
-         to='contatos'>
+         to='/contatos'>
             Contatos
          </MeuLink>
 
