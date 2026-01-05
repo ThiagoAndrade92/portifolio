@@ -5,6 +5,7 @@ import style from './NavDesktop.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
+import { MeuLink } from '../MeuLink';
 
 type Theme = 'dark' | 'light';
 
@@ -38,40 +39,40 @@ export const NavDesktop = () => {
    return (
       <nav className={`${style.nav} d-flex justify-content-center align-items-center`}>
 
-         <a 
+         <MeuLink 
          title='ir para a home'
          aria-label='ir para a home'
-         href='#'>
+         to='/'>
             Home
-         </a>
+         </MeuLink>
 
-         <a 
+         <MeuLink
          title='ir para a seção sobre'
          aria-label='ir para a seção sobre'
-         href='#about'>
+         to='about'>
             Sobre
-         </a>
+         </MeuLink>
 
-         <a
+         <MeuLink
          title='ir para a seção habilidades'
          aria-label='ir para a seção habilidades'
-         href='#skills'>
+         to='skills'>
             Habilidades
-         </a>
+         </MeuLink>
 
-         <a
+         <MeuLink
          title='ir para a seção projetos'
          aria-label='ir para a seção projetos'
-         href='#projects'>
+         to='projects'>
             Projetos
-         </a>
+         </MeuLink>
 
-         <a
+         <MeuLink
          title='ir para a seção contatos'
          aria-label='ir para a seção contatos'
-         href='#contacts'>
+         to='contatos'>
             Contatos
-         </a>
+         </MeuLink>
 
          <a 
             title='mudar tema'

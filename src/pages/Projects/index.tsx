@@ -1,18 +1,14 @@
 //Css
 import style from './Projects.module.css';
 
-//Images
-import { LoginImg, loginScreens } from '../../assets/images/login/index';
-import { CepImg, cepScreens } from '../../assets/images/cep/index';
-import { TodoImg, todoScreens } from '../../assets/images/todo/index';
-import Loja from '../../assets/images/loja.png';
+//Utils
+import { projects } from '../../util/projects';
 
 //React
 import { useState } from 'react';
 
 //components
 import { Modal } from '../../components/Modal';
-import { projects } from '../../util/projects';
 
 export const Projects = () => {
 
@@ -30,7 +26,7 @@ export const Projects = () => {
 };
 
    return (
-      <section className={`${style.projects}`} id='projects'>
+      <section className={`${style.projects}`}>
          <h1 className='mb-5'>Projetos</h1>
 
          <div className={`${style.cards_box} d-flex row g-3`}>

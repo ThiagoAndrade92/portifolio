@@ -6,7 +6,7 @@ export const About = () => {
 
 
    return (
-      <section className={`${style.about} d-flex flex-column align-items-center justify-content-center`} id='about'>
+      <section className={`${style.about} d-flex flex-column align-items-center justify-content-center`}>
          <h1 className='mb-5'>Sobre mim</h1>
          <p><span className='span'>Olá!</span> Eu sou o <span className='span'>Thiago</span>, uma pessoa curiosa e determinada, que gosta de aprender coisas novas e transformar ideias em algo concreto. Sou apaixonado por tecnologia, mas também curto aproveitar meu tempo fora das telas — seja ouvindo música, jogando, assistindo séries ou passando momentos com pessoas importantes na minha vida.
 

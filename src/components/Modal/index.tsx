@@ -29,7 +29,7 @@ export const Modal = ({ project, onClose }: Props) => {
    return (
       <>
          {/* ============== MOBILE ================ */}
-         <div className={`${style.modalMobile} d-sm-none position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center`}
+         <div className={`${style.modalMobile} d-sm-none`}
             onClick={onClose}
          >
             <div className={`${style.carouselMobile}`}>
@@ -44,7 +44,7 @@ export const Modal = ({ project, onClose }: Props) => {
             </div>
          </div>
          {/* ============== DESKTOP ================ */}
-         <div className={`${style.modal} d-none d-sm-block position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center`}
+         <div className={`${style.modal} d-none d-sm-block`}
             onClick={onClose}
          >
             <div className={`${style.carousel}`}>

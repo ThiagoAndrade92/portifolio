@@ -8,6 +8,7 @@
    font-size: 2.5rem;
    font-weight: 600;
    color: var(--h1-title-projects);
+   margin-top: 20px;
 }
 
 .card {

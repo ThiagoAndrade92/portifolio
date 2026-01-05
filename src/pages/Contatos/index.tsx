@@ -17,7 +17,7 @@ export const Contatos = () => {
    };
 
    return (
-      <section className={`${style.contatos} `} id='contacts'>
+      <section className={`${style.contatos} `}>
          <h1>Contatos</h1>
          <div className={`${style.box_contatos} d-flex flex-column align-items-center justify-content-center`}>
 
