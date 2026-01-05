@@ -87,6 +87,7 @@
 
 .contato.curriculo {
    border: 2px solid var(--border-contato);
+   cursor: pointer;
 }
 
 .contato.curriculo:hover {

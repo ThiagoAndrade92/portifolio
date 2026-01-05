@@ -54,17 +54,18 @@ export const Contatos = () => {
                <span className={`${style.nome}`}>GitHub</span>
             </a>{/* GitHub */}
 
-            <button 
-            onClick={mostrarCurriculo} 
+            <a 
+            href='./Currículo2026.pdf'
+            download='Currículo2026'
             className={`${style.contato} ${style.curriculo}`}
             >
                <FontAwesomeIcon icon={faFileText} className={`${style.icon}`} />
                <span className={`${style.nome}`}>Currículo</span>
-            </button>{/* Currículo */}
+            </a>{/* Currículo */}
 
          </div>
          {/* Currículo */}
-         <div className={`${style.curriculo_dados} ${toggle ? 'd-block' : 'd-none'}`}>
+         {/* <div className={`${style.curriculo_dados} ${toggle ? 'd-block' : 'd-none'}`}>
             <header>
                <h1 className={`${style.nome}`}>Thiago da Silva Andrade</h1>
                <p>
@@ -138,7 +139,7 @@ export const Contatos = () => {
                <p>Currículo criado para candidatura a vaga de desenvolvedor front-end júnior / estágio.</p>
                <p>Data: 30/09/2025</p>
             </footer>
-         </div>
+         </div> */}
 
       </section>
    )
