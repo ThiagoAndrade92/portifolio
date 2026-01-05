@@ -10,7 +10,8 @@
    --btn-projects: #9932CC;
    --btn-projects-text: #fff;
    --btn-projects-hover: #7a017a;
-   --border-contato: #9932CC;
+   --border-contato: #fff;
+   --box-shadow-contato: 2px 2px 4px rgba(250, 250, 0, .7);
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
    --color-link-desktop: #000000;
@@ -43,7 +44,8 @@
    --color-text: #000;
    /* elements */
    --btn-projects: #9932CC;
-   --border-contato: #9370d8;
+   --border-contato: #000;
+   --box-shadow-contato: 2px 2px 4px rgba(0, 0, 0, 0.5);
    --marker-li: #800080;
    --hover-nav-desktop: #8B008B;
    --color-link-desktop: #f0f8ff;

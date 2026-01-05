@@ -44,7 +44,7 @@
 
 .contato.whatsapp:hover {
    transform: scale(1.1);
-   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+   box-shadow: var(--box-shadow-contato);
 }
 
 .whatsapp .icon,
@@ -59,7 +59,7 @@
 
 .contato.linkedin:hover {
    transform: scale(1.1);
-   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+   box-shadow: var(--box-shadow-contato);
 
 }
 
@@ -75,7 +75,7 @@
 
 .contato.github:hover {
    transform: scale(1.1);
-   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+   box-shadow: var(--box-shadow-contato);
 
 }
 
@@ -86,12 +86,12 @@
 }
 
 .contato.curriculo {
-   border: 2px solid darkgrey;
+   border: 2px solid var(--border-contato);
 }
 
 .contato.curriculo:hover {
    transform: scale(1.1);
-   box-shadow: 2px 2px 4px rgba(169, 169, 169, .8);
+   box-shadow: var(--box-shadow-contato);
 
 }
 
@@ -101,7 +101,7 @@
 
 .curriculo .icon,
 .curriculo .nome {
-   color: darkgrey;
+   color: var(--border-contato);
    transition: all .2s ease-in-out;
 }
 

@@ -21,22 +21,43 @@ export const Contatos = () => {
          <h1>Contatos</h1>
          <div className={`${style.box_contatos} d-flex flex-column align-items-center justify-content-center`}>
 
-            <a href="https://wa.me/5519992901698" target="_blank" className={`${style.contato} ${style.whatsapp}`}>
+            <a 
+            href="https://wa.me/5519992901698" 
+            target="_blank" 
+            className={`${style.contato} ${style.whatsapp}`}
+            title='Ir para o whatsapp'
+            aria-label='Ir para o whatsapp'
+            >
                <FontAwesomeIcon icon={faWhatsapp} className={`${style.icon}`} />
                <span className={`${style.nome}`}>Whatsapp</span>
             </a>{/* whatsapp */}
 
-            <a href='https://www.linkedin.com/in/thiago-silva-5581a41a2/' target='_blank' className={`${style.contato} ${style.linkedin}`}>
+            <a 
+            href='https://www.linkedin.com/in/thiago-silva-5581a41a2/' 
+            target='_blank' 
+            className={`${style.contato} ${style.linkedin}`}
+            title='Ir para o linkedin'
+            aria-label='Ir para o linkedin'
+            >
                <FontAwesomeIcon icon={faLinkedin} className={`${style.icon}`} />
                <span className={`${style.nome}`}>Likedin</span>
             </a>{/* likedin */}
 
-            <a href='https://github.com/ThiagoAndrade92?tab=repositories' target='_blank' className={`${style.contato} ${style.github}`}>
+            <a 
+            href='https://github.com/ThiagoAndrade92?tab=repositories' 
+            target='_blank' 
+            className={`${style.contato} ${style.github}`}
+            title='Ir para o github'
+            aria-label='Ir para o github'
+            >
                <FontAwesomeIcon icon={faGithub} className={`${style.icon}`} />
                <span className={`${style.nome}`}>GitHub</span>
             </a>{/* GitHub */}
 
-            <button onClick={mostrarCurriculo} className={`${style.contato} ${style.curriculo}`}>
+            <button 
+            onClick={mostrarCurriculo} 
+            className={`${style.contato} ${style.curriculo}`}
+            >
                <FontAwesomeIcon icon={faFileText} className={`${style.icon}`} />
                <span className={`${style.nome}`}>Currículo</span>
             </button>{/* Currículo */}
